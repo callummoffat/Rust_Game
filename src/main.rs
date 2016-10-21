@@ -2,7 +2,7 @@ extern crate rand;
 
 use std::io;
 use rand::Rng;
-using std::cmp::Ordering;
+use std::cmp::Ordering;
 
 fn main() {
     println!("Guess the number");
@@ -21,7 +21,7 @@ fn main() {
 	
 		println!("You guessed: {}", guess);
 	
-		let guess : u32 = match guess.trim.parse()
+		let guess : u32 = match guess.trim().parse()
 			{
 				Ok(num) => num,
 				Err(_) => continue,
